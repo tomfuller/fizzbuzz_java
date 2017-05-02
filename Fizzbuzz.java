@@ -1,16 +1,15 @@
 class Fizzbuzz {
 
   public boolean isDivisibleBy3(int number) {
-    if(number % 3 == 0) {
-      return true;
-    }
-    else {
-      return false;
-    }
+    return isDivisible(number, 3);
   }
 
   public boolean isDivisibleBy5(int number) {
-    if(number % 5 == 0) {
+    return isDivisible(number, 5);
+  }
+
+  public boolean isDivisible(int number, int divisor) {
+    if(number % divisor == 0) {
       return true;
     }
     else {
