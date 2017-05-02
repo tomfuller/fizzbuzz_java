@@ -70,4 +70,9 @@ class FizzbuzzTestDrive {
     assertEquals("should return fizzbuzz", fizz.checkNumber(15), "Fizzbuzz");
   }
 
+  @Test
+  public void returnFizz() {
+    assertEquals("should return fizz", fizz.checkNumber(3), "Fizz");
+  }
+
 }
