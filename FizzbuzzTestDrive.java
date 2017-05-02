@@ -6,9 +6,22 @@ import org.junit.Test;
 
 class FizzbuzzTestDrive {
 
+  Fizzbuzz fizz = new Fizzbuzz();
+
   public static void main(String[] args) {
     FizzbuzzTestDrive tests = new FizzbuzzTestDrive();
-    Fizzbuzz fizz = new Fizzbuzz();
+    tests.divisibleBy3();
+    tests.notDivisibleBy3();
+  }
+
+  @Test
+  public void divisibleBy3() {
+    assertEquals("should return true", fizz.isDivisibleBy3(3), true);
+  }
+
+  @Test
+  public void notDivisibleBy3() {
+    assertEquals("should return false", fizz.isDivisibleBy3(4), false);
   }
 
 }
