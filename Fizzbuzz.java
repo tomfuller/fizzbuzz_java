@@ -28,6 +28,9 @@ class Fizzbuzz {
     else if(isDivisibleBy3(number)) {
       return "Fizz";
     }
+    else if(isDivisibleBy5(number)) {
+      return "Buzz";
+    }
     else {
       return number + "";
     }

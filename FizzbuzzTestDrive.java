@@ -18,6 +18,10 @@ class FizzbuzzTestDrive {
     tests.notDivisibleBy();
     tests.divisibleBy15();
     tests.notDivisibleBy15();
+    tests.returnNumber();
+    tests.returnFizzbuzz();
+    tests.returnFizz();
+    tests.returnBuzz();
   }
 
   @Test
@@ -73,6 +77,11 @@ class FizzbuzzTestDrive {
   @Test
   public void returnFizz() {
     assertEquals("should return fizz", fizz.checkNumber(3), "Fizz");
+  }
+
+  @Test
+  public void returnBuzz() {
+    assertEquals("should return buzz", fizz.checkNumber(5), "Buzz");
   }
 
 }
