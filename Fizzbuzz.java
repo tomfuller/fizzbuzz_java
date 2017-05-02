@@ -21,4 +21,13 @@ class Fizzbuzz {
     return isDivisible(number, 15);
   }
 
+  public String checkNumber(int number) {
+    if(isDivisibleBy15(number)) {
+      return "Fizzbuzz";
+    }
+    else {
+      return number + "";
+    }
+  }
+
 }

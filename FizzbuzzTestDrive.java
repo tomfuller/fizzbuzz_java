@@ -60,4 +60,14 @@ class FizzbuzzTestDrive {
     assertEquals("should return false", fizz.isDivisibleBy15(16), false);
   }
 
+  @Test
+  public void returnNumber() {
+    assertEquals("should return number if not divisible by 3 or 5", fizz.checkNumber(2), "2");
+  }
+
+  @Test
+  public void returnFizzbuzz() {
+    assertEquals("should return fizzbuzz", fizz.checkNumber(15), "Fizzbuzz");
+  }
+
 }
