@@ -22,6 +22,7 @@ class FizzbuzzTestDrive {
     tests.returnFizzbuzz();
     tests.returnFizz();
     tests.returnBuzz();
+    tests.featureTest();
   }
 
   @Test
@@ -82,6 +83,14 @@ class FizzbuzzTestDrive {
   @Test
   public void returnBuzz() {
     assertEquals("should return buzz", fizz.checkNumber(5), "Buzz");
+  }
+
+  public void featureTest() {
+    int i = 0;
+    while(i < 101) {
+      System.out.println(fizz.checkNumber(i));
+      i += 1;
+    }
   }
 
 }
