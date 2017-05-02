@@ -9,4 +9,13 @@ class Fizzbuzz {
     }
   }
 
+  public boolean isDivisibleBy5(int number) {
+    if(number % 5 == 0) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
 }

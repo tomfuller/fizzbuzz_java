@@ -12,6 +12,8 @@ class FizzbuzzTestDrive {
     FizzbuzzTestDrive tests = new FizzbuzzTestDrive();
     tests.divisibleBy3();
     tests.notDivisibleBy3();
+    tests.divisibleBy5();
+    tests.notDivisibleBy5();
   }
 
   @Test
@@ -22,6 +24,16 @@ class FizzbuzzTestDrive {
   @Test
   public void notDivisibleBy3() {
     assertEquals("should return false", fizz.isDivisibleBy3(4), false);
+  }
+
+  @Test
+  public void divisibleBy5() {
+    assertEquals("should return true", fizz.isDivisibleBy5(5), true);
+  }
+
+  @Test
+  public void notDivisibleBy5() {
+    assertEquals("should return false", fizz.isDivisibleBy5(7), false);
   }
 
 }
