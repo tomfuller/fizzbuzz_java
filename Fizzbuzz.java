@@ -17,4 +17,8 @@ class Fizzbuzz {
     }
   }
 
+  public boolean isDivisibleBy15(int number) {
+    return isDivisible(number, 15);
+  }
+
 }
